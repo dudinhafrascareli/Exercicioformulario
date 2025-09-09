@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de cadastro</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="formulario.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <div id="containerGeral">
+          <p>Cadastro</p>
+
+          <div id="containerCampos">
+            <div class="campos">
+              <label>Primeiro Nome</label>
+              <div>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  placeholder="Digite seu nome..."
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="erro"></span>
+            </div>
+            <div class="campos">
+              <label for="sobrenome">Último Nome</label>
+              <div>
+                <input
+                  type="text"
+                  name="ultimoNome"
+                  id="ultimoNome"
+                  placeholder="Digite seu último nome..."
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="erro"></span>
+            </div>
+            <div class="campos">
+              <label for="nome">Telefone(celular)</label>
+              <div>
+                <input
+                  type="text"
+                  name="telefone"
+                  id="telefone"
+                  placeholder="ex: (00)00000-0000"
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="erro"></span>
+            </div>
+            <div class="campos">
+              <label for="email">E-mail</label>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="exemplo@email.com"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <span class="erro"></span>
+            </div>
+            <div class="campos">
+              <label for="nome">RG</label>
+              <div>
+                <input
+                  type="text"
+                  name="rg"
+                  id="rg"
+                  placeholder="ex: 00.000.000-0"
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="erro"></span>
+            </div>
+            <div class="campos">
+              <label for="nome">CPF</label>
+              <div>
+                <input
+                  type="text"
+                  name="cpf"
+                  id="cpf"
+                  placeholder="ex: 000.000.000-00"
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="erro"></span>
+            </div>
+            <div class="camposNascimento">
+              <label for="nascimento">Nascimento</label>
+              <div>
+                <input type="date" name="nascimento" id="nascimento" />
+              </div>
+              <span class="erro"></span>
+            </div>
+          </div>
+
+          <div class="residenciaContainer">
+            <p>Domicílio</p>
+            <br />
+
+            <label for="residencia">Residência</label>
+            <select name="residencia" id="residencia" required>
+              <option selected disabled value="">Selecione</option>
+              <option value="rua">Rua</option>
+              <option value="avenida">Avenida</option>
+              <option value="alameda">Alameda</option>
+              <option value="praca">Praça</option>
+              <option value="rodovia">Rodovia</option>
+              <option value="travessa">Travessa</option>
+              <option value="viela">Viela</option>
+              <option value="parque">Parque</option>
+              <option value="jardim">Jardim</option></select
+            ><br /><br />
+
+            <label for="residencia">Estado</label>
+            <select name="estado" id="estado" required>
+              <option selected disabled value="">Selecione</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option></select
+            ><br /><br />
+
+            <div id="testeCaixa">
+              <div class="campos">
+                <label>Endereço</label>
+                <div>
+                  <input
+                    type="text"
+                    name="endereco"
+                    id="endereco"
+                    placeholder="Digite o Endereço..."
+                    style="width: 100%"
+                  />
+                </div>
+                <span class="erro"></span>
+              </div>
+              <br />
+
+              <div class="campos">
+                <label>Complemento</label>
+                <div>
+                  <input
+                    type="text"
+                    name="complemento"
+                    id="complemento"
+                    placeholder="Digite o complemento..."
+                    style="width: 100%"
+                  />
+                </div>
+                <span class="erro"></span>
+              </div>
+              <br />
+              <div class="campos">
+                <label>CEP</label>
+                <div>
+                  <input
+                    type="text"
+                    name="cep"
+                    id="cep"
+                    placeholder="Digite o CEP..."
+                    style="width: 100%"
+                  />
+                </div>
+                <span class="erro"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="escolaridadeBox">
+            <p>Escolaridade</p>
+            <br />
+          
+            <div id="escolaridadeInputs">
+              <div class="radio_box">
+                <input type="radio" name="escolaridade" id="efc" value="efc" />
+                <label for="efc" class="form_label"
+                  >Ensino Fundamental Completo</label
+                >
+              </div>
+              <div class="radio_box">
+                <input type="radio" name="escolaridade" id="efi" value="efi" "/>
+                <label for="efi" class="form_label"
+                  >Ensino Fundamental Incompleto</label
+                >
+              </div>
+              <div class="radio_box">
+                <input type="radio" name="escolaridade" id="emc" value="emc" />
+                <label for="emc" class="form_label">Ensino Médio Completo</label>
+              </div>
+              <div class="radio_box">
+                <input type="radio" name="escolaridade" id="emi" value="emi" />
+                <label for="emi" class="form_label">Ensino Médio Incompleto</label>
+              </div>
+              <div class="radio_box">
+                <input type="radio" name="escolaridade" id="sc" value="sc" />
+                <label for="sc" class="form_label">Superior Completo</label>
+              </div>
+              <div class="radio_box">
+                <input type="radio" name="escolaridade" id="si" value="si" />
+                <label for="si" class="form_label">Superior Incompleto</label>
+              </div>
+            </div>
+            
+            <span class="erro"></span>
+          <br>
+            <div class="campos">
+              <label for="curso">Curso</label>
+              <div>
+                <input
+                  type="text"
+                  name="curso"
+                  id="curso"
+                  placeholder="Digite o nome do curso..."
+                />
+              </div>
+              <span class="erro"></span>
+            </div>
+          <br>
+            <div class="campos">
+              <label for="anoConclusao">Ano de Conclusão</label>
+              <div>
+                <input
+                  type="text"
+                  name="anoConclusao"
+                  id="anoConclusao"
+                  placeholder="Digite o ano de conclusão..."
+                  min="1900"
+                  max="2099"
+                />
+              </div>
+              <span class="erro"></span>
+            </div>
+          </div>
+          
+          <button type="submit">Enviar</button>
+          </div>
+
+
+
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fecef8;
+}
+
+#containerGeral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 65%;
+  gap: 32px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  color: #9a5b91;
+  box-shadow: 10px 10px 10px #9a5b91;
+}
+
+input[type="text"],
+[type="email"],
+[type="date"],
+select {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 1px 10px -2px rgb(175, 158, 174);
+}
+
+label {
+  font-size: small;
+}
+
+i {
+  color: #fecef8;
+}
+
+#containerCampos {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: span 2;
+  width: 100%;
+  gap: 10px;
+}
+
+p {
+  color: #ec6cdb;
+}
+
+.residenciaContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+[type="email"],
+[type="date"] {
+  width: 200px;
+  height: 45px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+input[type="text"],
+[type="email"],
+[type="date"] :hover {
+}
+input[type="radio"] {
+  color: #ec6cdb;
+}
+
+button{
+  background-color: #fecef8;
+  border: none;
+  color: #9a5b91;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: #9a5b91;
+  color: #fecef8;
+  padding: 6px;
+}
+
+.erro{
+  color: red;
+  font-size: x-small;
+}
+
+.erro i {
+  color: red; 
+  margin-right: 5px; 
+}
